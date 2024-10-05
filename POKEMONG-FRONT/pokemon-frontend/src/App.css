@@ -1,0 +1,187 @@
+body {
+  background: linear-gradient(120deg, #a1c4fd, #c2e9fb, #d4fc79, #96e6a1);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.App {
+  text-align: center;
+}
+
+.pokemon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pokemon-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+}
+
+.pokemon-card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.pokemon-card p {
+  margin: 10px 0;
+}
+
+.pokemon-form-card {
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  max-width: 600px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.pokemon-form-card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+
+.pokemon-form-input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 5px 0 15px 0;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.pokemon-form-input:hover {
+  border-color: #007bff;
+}
+
+.pokemon-form-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  outline: none; 
+}
+
+
+.pokemon-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+
+.pokemon-info strong {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333; 
+}
+
+.pokemon-form-card {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  max-width: 600px;
+  text-align: left;
+  margin: 40px auto;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.form-button {
+  background-color: #28a745;
+  color: white;
+  margin-top: 20px;
+}
+
+.form-button:hover {
+  background-color: #218838;
+}
+
+.card-button {
+  background-color: #007bff;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.create-button {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #add8e6;
+  color: white;
+  border: 2px solid #add8e6;
+  border-radius: 12px;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.create-button:hover {
+  background-color: white;
+  color: #add8e6;
+  border: 2px solid white;
+  transform: scale(1.1);
+}

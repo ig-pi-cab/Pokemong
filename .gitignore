@@ -1,0 +1,14 @@
+# Ignore Python cache files and virtual environments (for backend)
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# Ignore Node.js modules and build files (for frontend)
+pokemong-front/node_modules/
+pokemong-front/build/
+POKEMONG-FRONT/pokemon-frontend/node_modules/
+
+# Ignore environment variables
+pokemong/.env
+pokemong-front/.env
